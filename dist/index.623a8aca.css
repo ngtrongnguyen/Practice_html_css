@@ -17,7 +17,6 @@ figure {
 }
 
 button {
-  color: #f6f6f6;
   background-color: #f58634;
   border-color: #f58634;
   border-radius: 12px;
@@ -34,7 +33,7 @@ button {
 }
 
 footer, h1 {
-  color: #fff;
+  color: #000;
   font-family: Quicksand;
   font-size: 56px;
   font-style: normal;
