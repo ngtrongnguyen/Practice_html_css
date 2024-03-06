@@ -32,6 +32,21 @@ button {
   bottom: 0;
 }
 
+@font-face {
+  font-family: Opensans;
+  src: url("OpenSans-VariableFont_wdth,wght.91473cd2.ttf");
+}
+
+@font-face {
+  font-family: Popins;
+  src: url("Poppins-BlackItalic.9e814dce.otf");
+}
+
+@font-face {
+  font-family: SourseSansPro;
+  src: url("SourceSansPro-Bold.a5c22741.ttf");
+}
+
 footer, h1 {
   color: #000;
   font-family: Quicksand;
