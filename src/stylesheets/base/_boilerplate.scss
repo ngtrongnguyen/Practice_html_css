@@ -1,0 +1,36 @@
+@use '../abstract/' as * ;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+ 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  link {
+    display: block;
+  }
+  figure {
+    margin: 10px;
+  }
+
+  button{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    text-decoration: none;
+    color: $btn-color ;
+    border-color: $borderbtn-color;
+    background-color: $borderbtn-color;
+    border-radius: 12px;
+  }
+  
