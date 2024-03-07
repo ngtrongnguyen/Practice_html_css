@@ -45,6 +45,9 @@
             @include mobile {
                     display: none;
                 }
+            .nav-link {
+                color: $text-color;
+                }
         }
         .nav-regis-search{
             padding: 0.5rem 1rem;

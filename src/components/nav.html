@@ -1,6 +1,6 @@
 <nav class="header-navbar">
     <div class="nav-left">
-        <figure class="nav-item">          
+        <div class="nav-item">          
             <center>
                 <div class="nav-left-logocontain">
 
@@ -9,7 +9,7 @@
                 </div>
 
             </center>    
-        </figure>
+        </div>
     </div>
     <div class="nav-middle">
         <ul class="nav-item">
@@ -24,12 +24,17 @@
     <div class="nav-right">
         <ul class="nav-regis">
             <li class="nav-regis-search"><img src="/src/assets/img/navbar/Search.png" alt="logo-image"></li>
-            <li class="nav-regis-hover">Login</li>
-            <li class="nav-regis-hover">Register</li>
+            <include src="components/nav-list.html" locals='{
+                                "classList": "nav-regis-hover",
+                                "classLink": "nav-link",
+                                "list": "[`Login`, `Register`]"
+                              }'>
+            </include>
+
         </ul>
-        <div class="nav-right-mobible">
+        <figure class="nav-right-mobible">
             <img src="/src/assets/img/Register/regis-mini.png" alt="logo-image">
-        </div>
+        </figure>
     </div>
 </nav>
 
