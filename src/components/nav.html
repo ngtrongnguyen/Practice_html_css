@@ -1,5 +1,36 @@
 <nav class="header-navbar">
-    <h1>hhi</h1>
+    <div class="nav-left">
+        <figure class="nav-item">          
+            <center>
+                <div class="nav-left-logocontain">
+
+                    <span class="nav-left-mobile">&#9776;</span>
+                    <img src="/src/assets/img/navbar/Group 200.png" alt="logo-image">
+                </div>
+
+            </center>    
+        </figure>
+    </div>
+    <div class="nav-middle">
+        <ul class="nav-item">
+            <include src="components/nav-list.html" locals='{
+                    "classList": "nav-items ",
+                    "classLink": "nav-link",
+                    "list": "[`Home`, `Course`, `Instuctors`, `Schedule`, `Contact Us`]"
+                  }'>
+            </include>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <ul class="nav-regis">
+            <li class="nav-regis-search"><img src="/src/assets/img/navbar/Search.png" alt="logo-image"></li>
+            <li class="nav-regis-hover">Login</li>
+            <li class="nav-regis-hover">Register</li>
+        </ul>
+        <div class="nav-right-mobible">
+            <img src="/src/assets/img/Register/regis-mini.png" alt="logo-image">
+        </div>
+    </div>
 </nav>
 
 

@@ -27,65 +27,74 @@ footer,h1 {
 }
 h3 {
     
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 550;
-    font-size: 32px;
-    line-height: 36px;
-    color: #120A00;
-    margin: 20px 0;
+    // font-family: sans-serif;
+    // font-style: normal;
+    // font-weight: 550;
+    // font-size: 32px;
+    // line-height: 36px;
+    // color: #120A00;
+    // margin: 20px 0;
 
 }
 
 span{
    
 /* Regular/Normal text */
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 12px;
+    // font-family: 'Quicksand';
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height: 12px;
 /* identical to box height, or 150% */
 /* Brand color/Secondary */
 
     color: $span-color;
 }
-p {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    color: $p-color;
-    margin: 0 10px;
-}
-b {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    color: $b-color;
-    margin-left: 10px;
-}
-q {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: $q-color;
+// p {
+//     font-family: 'Quicksand';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 18px;
+//     line-height: 26px;
+//     color: $p-color;
+//     margin: 0 10px;
+// }
+// b {
+//     font-family: 'Quicksand';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 22px;
+//     color: $b-color;
+//     margin-left: 10px;
+// }
+// q {
+//     font-family: 'Quicksand';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 24px;
+//     color: $q-color;
     
-}
+// }
 
-blockquote {
-    //styleName: Regular/Normal text;
-    font-family: Quicksand;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    // text-align: left;
-    color: $blockquote-color;
+// blockquote {
+//     //styleName: Regular/Normal text;
+//     font-family: Quicksand;
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 24px;
+//     letter-spacing: 0em;
+//     // text-align: left;
+//     color: $blockquote-color;
 
+// }
+li {
+    font-family: 'SourseSansPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 20.11px;
+    color: $text-color;
+    
 }

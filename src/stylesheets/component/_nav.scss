@@ -1,2 +1,69 @@
 @use '../abstract/' as * ;
 
+.header-navbar {
+    @include mobile {
+            background-color: aliceblue;
+            
+        }
+    width: 100%;
+    @include flex($direction: row, $justify: space-between, $align: center);
+    .nav-left {
+        width: 100%;
+        margin: 1rem;
+        .nav-left-logocontain{
+            @include  flex($direction: row, $justify: center, $align: center);
+            gap: 1rem;
+            .nav-left-mobile {
+                display: none;
+                @include mobile {
+                display: block;
+                text-align: center;
+                font-size: 2rem;
+                }
+            }
+        }
+    }
+    .nav-middle{
+        width: 100%;
+        .nav-item{
+            @include flex($direction: row, $justify: space-between, $align: center);
+        }
+        .nav-link{
+            color: $text-color;
+        }
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+    .nav-right{
+        width: 100%;
+        .nav-regis{
+            @include flex($direction: row, $justify: center, $align: center);
+            @include mobile {
+                    display: none;
+                }
+        }
+        .nav-regis-search{
+            padding: 0.5rem 1rem;
+            border-radius: 5%;
+        }
+        .nav-regis-hover{
+            padding: 0.5rem 1rem;
+            border-radius: 5%;
+        }
+        .nav-regis-hover:hover{
+            background-color: $text-color;
+            color: $li-hover;
+        }
+        .nav-right-mobible{
+            display: none;
+            @include mobile {
+                    display: block;
+                    text-align: center;
+                }
+        }
+    }
+}
