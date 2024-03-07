@@ -39,7 +39,7 @@ button {
 
 @font-face {
   font-family: Popins;
-  src: url("Poppins-BlackItalic.9e814dce.otf");
+  src: url("Poppins-Black.0e501981.otf");
 }
 
 @font-face {
@@ -49,7 +49,7 @@ button {
 
 footer, h1 {
   color: #000;
-  font-family: Quicksand;
+  font-family: SourseSansPro;
   font-size: 56px;
   font-style: normal;
   font-weight: 700;

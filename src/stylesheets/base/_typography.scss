@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Popins;
-    src: url(/src/assets/fonts/poppins/Poppins-BlackItalic.otf);
+    src: url(/src/assets/fonts/poppins/Poppins-Black.otf);
 }
 
 @font-face {
@@ -17,12 +17,13 @@
 
 footer,h1 {
 
-    font-family: 'Quicksand';
+    font-family: 'SourseSansPro';
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 72px;
     color: $text-color;
+    
 }
 h3 {
     
