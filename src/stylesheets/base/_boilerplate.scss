@@ -18,7 +18,7 @@ html {
   }
 
   button{
-    font-family: 'Quicksand';
+    font-family: 'SourseSansPro';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -28,9 +28,11 @@ html {
     justify-content: center;
     bottom: 0;
     text-decoration: none;
- 
-    border-color: $borderbtn-color;
     background-color: $borderbtn-color;
-    border-radius: 12px;
+    color: $text-color;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: 1px hidden;
+    
   }
   
