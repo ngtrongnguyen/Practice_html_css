@@ -1,5 +1,8 @@
 @use '../abstract/' as * ;
 
-.main-header {
+.header {
     
+    padding: 2px 0px 20px 0px;
+    @include bg-img("/src/assets/img/header/image 13.png");
+    height: 50rem;
 }
