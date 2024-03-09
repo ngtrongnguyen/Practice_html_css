@@ -58,9 +58,14 @@
             @include mobile {
                     display: ruby-text;
                     width: 100%;
+                    
                 }
             .bottom-group{
                 @include flex($direction: row, $justify: center, $align: center);
+                gap: 1rem;
+                @include mobile {
+                    margin: 0 0.1rem;
+                }
             }
         }
         .bottom-arrow{

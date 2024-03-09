@@ -12,24 +12,21 @@
     </div>
     <div class="header-bottom">
         <div class="bottom-funtion">
-            <div class="bottom-group">
-                <figure>
-                    <img src="../assets/img/header/Live.png" alt="logo-mini">
-                </figure>
-                <h3>Live chat</h3> 
-            </div>
-            <div class="bottom-group">
-                <figure>
-                    <img src="../assets/img/header/Exam.png" alt="logo-mini">
-                </figure>
-                <h3>Examination</h3>
-            </div>
-            <div class="bottom-group">
-                <figure>
-                    <img src="../assets/img/header/Compet.png" alt="logo-mini">
-                </figure>
-                <h3>Competition</h3>
-            </div>   
+            <include src="./components/header-list.html" locals='{
+                        "list": "[`../assets/img/header/Live.png`]",
+                        "content": "Live chat" 
+                          }'>
+            </include>
+            <include src="./components/header-list.html" locals='{
+                                    "list": "[`../assets/img/header/Exam.png`]",
+                                    "content": "Examination" 
+                                      }'>
+            </include>
+            <include src="./components/header-list.html" locals='{
+                                    "list": "[`../assets/img/header/Compet.png`]",
+                                    "content": "Competition" 
+                                      }'>
+            </include>
         </div>
         <figure class="bottom-arrow">
             <img src="../assets/img/header/arrowup.png" alt="logo-mini">
