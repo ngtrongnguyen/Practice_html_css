@@ -1,0 +1,17 @@
+<div class="card">
+    <each loop="item in {{ list }}">      
+            <figure><img src="{{ item }}" alt="images of forum" loading="lazy" class="images-mobile" /></figure>
+    </each>
+    <div class="texts ">
+        <div class="card-contentp">
+            <p class="course-layout">{{ content }}</p>
+        </div>
+        <div class="course-symbol ">
+            <b>4.0</b>
+            <div class="Stars" style="--rating: {{ value }};" aria-label="Rating of this product is 4 out of 5."></div>
+            <span>(5,908)</span>
+        </div>
+        <button class="btn-courseitem">{{ contentLink }}</button>
+        <button class="btn-coursemobile">Menu</button>
+    </div>
+</div>

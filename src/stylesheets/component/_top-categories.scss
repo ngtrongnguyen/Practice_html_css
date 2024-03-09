@@ -1,0 +1,18 @@
+@use '../abstract/' as *;
+
+.top-categories{
+    .container-card{
+        margin-top: 1rem;
+        .course-group{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            figure{
+                text-align: center;
+            }
+            // .images-mobile{
+                
+            // }
+        }
+    }
+}
