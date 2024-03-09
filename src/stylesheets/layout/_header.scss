@@ -2,19 +2,25 @@
 
 .header {
     
-    padding: 2px 0px 20px 0px;
+    padding: 10px 0px 0px 0px;
     @include bg-img("/src/assets/img/header/image 13.png");
+    @include mobile {
+            padding:  0;
+    
+        }
     .main-header{
         @include flex($direction: column, $justify: space-between, $align: center);
-        margin: 8rem 40rem;
+        margin: auto;
+        width: 38%;
         gap: 2rem;
         padding-bottom: 5rem;
         @include mobile {
-                margin: 0 ;
-        
+                width: 92%;
+                margin: 1rem;
+                
             }
         @include tablet {
-                margin: 5rem;
+                width: 92%;
             }
         p{
             @include mobile {
@@ -30,6 +36,44 @@
                     line-height: 48px;
                     letter-spacing: 0em;
                 }   
+        }
+    }
+    .header-bottom{
+
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+                " aa  aa  bb bb cc ";
+        grid-template-rows: 8rem;
+        @include mobile {
+                display: block;
+            }
+        .bottom-funtion{
+            grid-area: bb ;
+            background-color: $text-color;
+            border-radius: 8px;
+            gap: 2rem;
+            transform: translateY(4rem);
+            @include flex($direction: row, $justify: center, $align: center);
+            @include mobile {
+                    display: ruby-text;
+                    width: 100%;
+                }
+            .bottom-group{
+                @include flex($direction: row, $justify: center, $align: center);
+            }
+        }
+        .bottom-arrow{
+            grid-area: cc;
+            text-align: center;
+            @include mobile {
+                    display: none;
+                }
+            
+                @include tablet {
+                    display: none;
+                }
+
         }
     }
 }
