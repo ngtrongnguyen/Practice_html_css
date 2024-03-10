@@ -13,6 +13,9 @@
         .nav-left-logocontain{
             @include  flex($direction: row, $justify: center, $align: center);
             gap: 1rem;
+            span{
+                color: $arrow-color;
+            }
             .nav-left-mobile {
                 display: none;
                 @include mobile {
@@ -70,3 +73,4 @@
         }
     }
 }
+

@@ -17,18 +17,34 @@
 
 footer,h1 {
 
-    font-family: 'SourseSansPro';
+    font-family: 'Popins';
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 72px;
     color: $text-color;
-    
+    text-align: center;
 }
-
+h3{
+        font-size: 24px;
+        font-weight: 100;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $p-color ;
+}
 span{
    
-    color: $span-color;
+    color: $text-color;
+}
+p{
+    font-family: 'SourseSansPro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $text-color;
 }
 
 li {
@@ -40,3 +56,4 @@ li {
     color: $text-color;
     
 }
+
