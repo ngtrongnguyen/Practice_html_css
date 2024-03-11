@@ -36,12 +36,17 @@ h3{
 }
 p{
     
-    font-size: 24px;
-    font-weight: 400;
+    
+    text-align: right;
+    color: $li-hover;   
+    font-family: 'SourseSansPro'; 
+    font-size: 36px;
+    font-weight: 600;
     line-height: 36px;
     letter-spacing: 0em;
-    text-align: right;
-    color: $li-hover;
+           
+           
+        
 }
 span{
    

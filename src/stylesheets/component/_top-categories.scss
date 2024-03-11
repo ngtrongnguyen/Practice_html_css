@@ -1,6 +1,10 @@
 @use '../abstract/' as *;
 
 .top-categories{
+    p{
+        margin: 0 5rem;
+        font-family: 'Popins';
+    }
     .container-card{
         margin-top: 1rem;
         .course-group{
@@ -9,10 +13,44 @@
             grid-template-rows: auto;
             figure{
                 text-align: center;
+                @include mobile {
+                        -webkit-transform: scale(0.5);
+                        transform: scale(0.5);
+                        /* you can change the value also */
+                        -webkit-transform-origin: center;
+                        transform-origin: center;
+                    }
+                // img{
+                //     @include mobile {
+                //             -webkit-transform: scale(0.5);
+                //                 transform: scale(0.5);
+                //                 /* you can change the value also */
+                //                 -webkit-transform-origin: center;
+                //                 transform-origin: center;
+                //         }
+                // }
             }
             // .images-mobile{
                 
             // }
+        }
+        .arrow-horizon{
+            @include flex($direction: row, $justify: space-between, $align: center);
+            padding: 0 5rem;
+            transform: translateY(-17rem);
+            @include mobile {
+                    display: none;
+                }
+            
+                @include tablet {
+                    display: none;
+                }
+            .button-horizon{
+                border-radius: 50%;
+                color: $text-color;
+                padding: 1.4rem 1.6rem;
+                font-size: 40px;
+            }
         }
     }
 }
