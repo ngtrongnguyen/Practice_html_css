@@ -1,3 +1,4 @@
+@use './abstract/mixin' as *;
 @use "layout";
 @use "base";
 // @use "pages";
@@ -5,4 +6,11 @@
 
 .container {
   margin: 0 12rem;
+  @include tablet {
+      margin: 5rem   ;
+    }
+  @include mobile {
+            margin: 2rem; 
+            
+        }
 }
