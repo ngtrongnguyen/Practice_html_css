@@ -7,18 +7,48 @@
         display: flex;
         padding: 5rem;
         .experts-avata {
-            width: 45%;
+            width: 42%;
+            text-align: -webkit-right;
             figure{    
                 img {    
                     width: 100%;   
                     height: 100%;
                 }
-            }            
+            }
+            .experts-outstand{
+                background-color: $text-color;
+                width: 35%;
+                padding: 1rem;
+                border-radius: 10px;
+                font-size: 25px;
+                @include flex($direction: column, $justify: center, $align: center);             
+                gap: 1rem;
+                line-height: 3rem;
+                transform: translateX(2rem) translateY(-22rem);
+                img{
+                    width: auto;
+                    height: auto;
+                }
+                .outstand-mid{
+                    @include flex($direction: column, $justify: center, $align: center);
+                    b {
+                        font-family: 'Popins';
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        text-align: center;
+                    } 
+                }
+                .outstand-bottom{
+                    
+                }
+            }
         }
-
         .experts-content {
-            width: 50%;
-            @include flex($direction: column, $justify: center, $align: center);
+            margin-top: 7rem;
+            padding: 0 6rem;
+            width: 55%;
+            @include flex($direction: column, $justify: flex-start, $align: flex-start);
             gap: 2rem;
             h4{
                 display: inline;
@@ -28,6 +58,9 @@
             }
             span {
                 color: $span-color;
+            }
+            button{
+                margin-top: 4rem;
             }
         }
     }

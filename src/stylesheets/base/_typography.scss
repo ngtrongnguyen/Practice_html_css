@@ -39,12 +39,12 @@ h3{
         }
 }
 h4{
-    
-        font-size: 52px;
-        font-weight: 700;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
+    font-family: 'Popins';
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 p{
     text-align: right;
@@ -59,10 +59,7 @@ p{
             font-size: 14px;
             font-weight: 400;
             line-height: 21px;
-        }
-           
-           
-        
+        }        
 }
 span{
 
@@ -72,6 +69,13 @@ span{
     letter-spacing: 0em;
     text-align: left;
     color: $span-color;
+}
+b{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0em;
+    color: $li-hover;
 }
 
 li {
@@ -83,5 +87,6 @@ li {
     color: $text-color;
     
 }
+
 
 
