@@ -1,0 +1,34 @@
+@use '../abstract/' as *;
+
+.experts-contain {
+    margin-top: 20rem;
+    @include bg-img("../assets/img/Experts/background.png");
+    .experts-container {
+        display: flex;
+        padding: 5rem;
+        .experts-avata {
+            width: 45%;
+            figure{    
+                img {    
+                    width: 100%;   
+                    height: 100%;
+                }
+            }            
+        }
+
+        .experts-content {
+            width: 50%;
+            @include flex($direction: column, $justify: center, $align: center);
+            gap: 2rem;
+            h4{
+                display: inline;
+                b{
+                        display: inline-grid;
+                }
+            }
+            span {
+                color: $span-color;
+            }
+        }
+    }
+}
