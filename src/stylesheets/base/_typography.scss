@@ -45,6 +45,15 @@ h4{
     line-height: 78px;
     letter-spacing: 0em;
     text-align: left;
+    @include mobile {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 48px;
+            text-align: center;
+        }
+    @include tablet {
+            text-align: center;
+        }
 }
 p{
     text-align: right;
@@ -69,6 +78,12 @@ span{
     letter-spacing: 0em;
     text-align: left;
     color: $span-color;
+    @include mobile {           
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+        }
 }
 b{
     font-size: 52px;
@@ -76,6 +91,11 @@ b{
     line-height: 78px;
     letter-spacing: 0em;
     color: $li-hover;
+    @include mobile {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 48px;
+        }
 }
 
 li {
