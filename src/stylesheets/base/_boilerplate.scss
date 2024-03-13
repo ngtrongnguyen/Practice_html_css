@@ -5,7 +5,6 @@ html {
     box-sizing: border-box;
   }
   
- 
   body {
     margin: 0;
     padding: 0;
@@ -19,21 +18,19 @@ html {
 
   button{
     font-family: 'SourseSansPro';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      bottom: 0;
-      text-decoration: none;
-      background-color: $borderbtn-color;
-      color: $text-color;
-      padding: 1.2rem 2.5rem;
-      border-radius: 5px;
-      border: 1px hidden;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    text-decoration: none;
+    background-color: $borderbtn-color;
+    color: $text-color;
+    padding: 1.2rem 2.5rem;
+    border-radius: 5px;
+    border: 1px hidden;   
   }
-  
-  
   
