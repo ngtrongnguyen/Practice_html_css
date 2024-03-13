@@ -1,0 +1,27 @@
+<section class="course-contain">
+    <div class="container">
+        <h3>Explore our </h3>
+        <h3>popular course</h3>
+        <include src="./components/button.html" locals='{
+                                              "class" : "button-horizon",
+                                              "backgroundColor" : "$borderbtn-color",
+                                              "color" : "$text-color",
+                                              "button" : "Sort by"
+                                              }'>
+        </include>
+        <div class="course-cardtotal">
+            <div class="container-card">
+                <div class="card-item">
+                    <include src="./components/card-list.html" locals='{
+                                  "img": "../assets/img/Course/anh-1.png",
+                                  "content": "Real Estate Development and Practices in Nigeria",
+                                  "value": "4",
+                                  "contentLink": "View Course"
+                                  }' />
+                     </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
