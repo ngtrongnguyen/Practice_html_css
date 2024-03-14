@@ -4,6 +4,12 @@
     .course-button{
         margin: 4rem 0;
         text-align: -webkit-right;
+        .button-course{
+            border-radius: 30px;
+            color: $text-color;
+            padding: 0.6rem 2rem;
+            font-size: 18px;
+        }
     }
     .course-cardtotal {
         .container-card {
