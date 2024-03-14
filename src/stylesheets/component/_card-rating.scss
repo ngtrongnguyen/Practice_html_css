@@ -3,7 +3,7 @@
 
 .Stars {
     --percent: calc(var(--rating) / 5 * 100%);
-
+    border: 1px $borderbtn-color;
     display: inline-block;
     font-size: var(--star-size);
     font-family: Times; // make sure ★ appears correctly

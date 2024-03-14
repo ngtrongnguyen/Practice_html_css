@@ -40,7 +40,12 @@
                     }
 
                     .texts {
+                        display: grid;
+                        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
                         margin: 1rem;
+                        @include mobile {
+                                grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
+                            }
                         .course-symbol {
                                 .symbol-right {
                                     @include flex($direction: row, $justify: space-between, $align: center);
