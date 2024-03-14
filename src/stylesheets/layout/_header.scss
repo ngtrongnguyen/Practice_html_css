@@ -61,6 +61,16 @@
                     
                 }
             .bottom-group{
+                .header-h3{                   
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 36px; 
+                    @include mobile {
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 27px;
+                        }
+                }
                 @include flex($direction: row, $justify: center, $align: center);
                 gap: 1rem;
                 @include mobile {

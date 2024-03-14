@@ -1,27 +1,67 @@
 <section class="course-contain">
     <div class="container">
-        <h3>Explore our </h3>
-        <h3>popular course</h3>
-        <include src="./components/button.html" locals='{
+        <h3>Explore our <br> popular course </h3>
+        <div class="course-button">
+            <include src="./components/button.html" locals='{
                                               "class" : "button-horizon",
                                               "backgroundColor" : "$borderbtn-color",
                                               "color" : "$text-color",
                                               "button" : "Sort by"
                                               }'>
-        </include>
+            </include>
+        </div>       
         <div class="course-cardtotal">
             <div class="container-card">
                 <div class="card-item">
                     <include src="./components/card-list.html" locals='{
                                   "img": "../assets/img/Course/anh-1.png",
-                                  "content": "Real Estate Development and Practices in Nigeria",
-                                  "value": "4",
-                                  "contentLink": "View Course"
+                                  "content": "Learn Marketing from Top Instructors.",
+                                  "value": "5"                                  
                                   }' />
-                     </div>
+                    </include>
                 </div>
+                <div class="card-item">
+                    <include src="./components/card-list.html" locals='{
+                                                  "img": "../assets/img/Course/anh-2.png",
+                                                  "content": "Front-end development is not hard as you think",
+                                                  "value": "5"                                  
+                                                  }' />
+                    </include>
+                </div>
+                <div class="card-item">
+                    <include src="./components/card-list.html" locals='{
+                                                  "img": "../assets/img/Course/anh-3.png",
+                                                  "content": "Everrything you need to know in UX",
+                                                  "value": "5"                                  
+                                                  }' />
+                    </include>
+                </div>
+                <div class="card-item">
+                    <include src="./components/card-list.html" locals='{
+                                                                  "img": "../assets/img/Course/anh-4.png",
+                                                                  "content": "Learn photography with ease.",
+                                                                  "value": "5"                                  
+                                                                  }' />
+                    </include>
+                </div>
+                <div class="card-item">
+                    <include src="./components/card-list.html" locals='{
+                                                                  "img": "../assets/img/Course/anh-5.png",
+                                                                  "content": "Be a pro in data analysis.",
+                                                                  "value": "5"                                  
+                                                                  }' />
+                    </include>
+                </div>
+                <div class="card-item">
+                    <include src="./components/card-list.html" locals='{
+                                                                  "img": "../assets/img/Course/anh-6.png",
+                                                                  "content": "Ethical Harking is not hard as you think .",
+                                                                  "value": "5"                                  
+                                                                  }' />
+                    </include>
+                </div>
+
             </div>
-        </div>
-        
+        </div>    
     </div>
 </section>

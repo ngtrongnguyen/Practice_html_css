@@ -3,15 +3,23 @@
         <img src="{{ img }}" alt="course's image" class="course-img" />
     </figure>
     <div class="texts ">
-        <div class="card-contentp">
-            <p class="course-layout">{{ content }}</p>
+        <div class="course-symbol">
+            <div class="symbol-left">
+                <span class="course-contents">{{ content }}</span>
+            </div>
+            <div class="symbol-right">
+                <div class="Stars" style="--rating: {{ value }};" aria-label="Rating of this product is 4 out of 5."></div>
+                <span class="course-contents">4.5</span>
+            </div>           
         </div>
-        <div class="course-symbol ">
-            <b>4.0</b>
-            <div class="Stars" style="--rating: {{ value }};" aria-label="Rating of this product is 4 out of 5."></div>
-            <span>(5,908)</span>
-        </div>
-        <button class="btn-courseitem">{{ contentLink }}</button>
-        <button class="btn-coursemobile">Menu</button>
+        <b class="course-b">30.5$</b>
+        <div class="course-bottom">           
+            <div class="card-student">
+                <span class="content-student">6 weeks &nbsp;</span>
+                <img src="../assets/img/Course/student-icon.png" alt="student-icon">
+                <span class="content-student">&nbsp; 1.5k Students</span>
+            </div>
+            <b class="course-bmobile" >30.5$</b>
+        </div >
     </div>
 </div>
