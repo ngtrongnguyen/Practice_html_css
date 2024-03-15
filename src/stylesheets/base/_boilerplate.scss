@@ -3,6 +3,11 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    .Stars {     
+      --star-size: 24px;
+      --star-color: #D9D9D9;
+      --star-background: #D9D9D9;          
+    }
   }
   
   body {
@@ -33,4 +38,5 @@ html {
     border-radius: 5px;
     border: 1px hidden;   
   }
+
   

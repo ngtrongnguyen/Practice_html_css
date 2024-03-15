@@ -3,14 +3,14 @@
 
 .Stars {
     --percent: calc(var(--rating) / 5 * 100%);
-
+    border: 1px $borderbtn-color;
     display: inline-block;
     font-size: var(--star-size);
     font-family: Times; // make sure ★ appears correctly
     line-height: 1;
 
     &::before {
-        content: '★★★★★';
+        content: '★';
         letter-spacing: 3px;
         background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
         -webkit-background-clip: text;
