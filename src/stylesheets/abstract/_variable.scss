@@ -1,27 +1,27 @@
 @use "funtions" as *;
 
 // color
-$text-color:  #FFFFFF;
-$background-color: #1E3446;
-$p-color: #262B35;
-$footer-color: #BDBDBD;
-$li-hover:  #FF6F28;
+$text-color: #ffffff;
+$background-color: #1e3446;
+$p-color: #262b35;
+$footer-color: #bdbdbd;
+$li-hover: #ff6f28;
+$outline: #e7e9eb;
+$background-regis: #fafafc;
 // button-color
 
-$bgbtn-color: #F58634;
-$borderbtn-color: #F58634;
-$comment-background:rgba(242, 242, 242, 0.5);
+$bgbtn-color: #f58634;
+$borderbtn-color: #f58634;
+$comment-background: rgba(242, 242, 242, 0.5);
 
 $icon-color: none;
-$blockquote-color:#120A00;
-$arrow-color:  #000000;
+$blockquote-color: #120a00;
+$arrow-color: #000000;
 // card-color
 $background-card: #fcfcfc;
-$student-color:  #333333;
+$student-color: #333333;
 // Responsive
 $medium: 768px;
 $extra-lager: 1200px;
 $mobile: calc($medium - 1px);
 $tablet: calc($extra-lager - 1px);
-
-

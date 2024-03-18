@@ -1,0 +1,188 @@
+@use "../abstract/" as *;
+
+.register {
+  @include bg-img("../assets/img/Experts/background.png");
+
+  .register-container {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    .register-avata {
+      text-align: center;
+      margin-bottom: 1rem;
+      @include tablet {
+        width: 100%;
+        align-items: center;
+      }
+
+      figure {
+        display: -webkit-inline-box;
+        text-align: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .register-outstand {
+      background-color: $text-color;
+      padding: 1rem 3rem;
+      border-radius: 10px;
+      font-size: 25px;
+      @include flex($direction: column, $justify: center, $align: center);
+      gap: 1rem;
+      transform: translate(-85%, 165%);
+
+      img {
+        width: auto;
+        height: auto;
+      }
+
+      .outstand-mid {
+        @include flex($direction: column, $justify: center, $align: center);
+        @include mobile {
+          font-size: 16px;
+          line-height: 1rem;
+        }
+        b {
+          font-family: "Popins";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+          text-align: center;
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+      }
+
+      @include tablet {
+        gap: 0;
+        line-height: 2rem;
+        padding: 1rem;
+      }
+
+      //   @include mobile {
+      //     transform: translate(-85%, 165%);
+      //   }
+    }
+    @include tablet {
+      display: block;
+      align-items: center;
+      padding: 0;
+    }
+    .register-form {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: $text-color;
+      padding: 2rem;
+      border-radius: 0.5em;
+      @include mobile {
+        background-color: transparent;
+        box-shadow: none;
+      }
+      .form-contain {
+        @include flex($direction: column, $justify: center, $align: center);
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: left;
+          color: black;
+          margin-bottom: 3rem;
+          @include mobile {
+            display: none;
+          }
+        }
+        h3 {
+          display: none;
+          @include mobile {
+            display: block;
+          }
+        }
+        input {
+          margin: 0.25em 0em 3em 0em;
+          outline: auto;
+          outline-color: $outline;
+          padding: 1em;
+          width: 100%;
+          border: none;
+          background-color: $background-regis;
+          border-radius: 0.25em;
+          color: black;
+        }
+        .register-button {
+          width: 100%;
+          display: flex;
+          justify-content: end;
+          @include mobile {
+            display: none;
+          }
+          button {
+            padding: 0.75em 5rem;
+            margin-top: 3rem;
+          }
+        }
+        .apply-button {
+          display: none;
+          width: 100%;
+          button {
+            width: 100%;
+          }
+          @include mobile {
+            display: block;
+          }
+        }
+        select {
+          margin: 0.25em 0em 3em 0em;
+          outline: auto;
+          outline-color: $outline;
+          padding: 1em;
+          width: 100%;
+          border: none;
+          background-color: $background-regis;
+          border-radius: 0.25em;
+          color: black;
+          display: none;
+          @include mobile {
+            display: block;
+          }
+        }
+        dl {
+          background-color: $background-regis;
+          margin: 0.25em 0em 3em 0em;
+          outline: auto;
+          padding: 0.5em;
+          width: 100%;
+          border: none;
+          outline-color: $outline;
+          background-color: $background-regis;
+          border-radius: 0.25em;
+          color: black;
+          @include mobile {
+            display: none;
+          }
+          @include flex(
+            $direction: row,
+            $justify: space-between,
+            $align: center
+          );
+          dd {
+            @include flex(
+              $direction: row,
+              $justify: space-between,
+              $align: center
+            );
+            .regis-snowflake {
+              gap: 1rem;
+              @include flex($direction: row, $justify: center, $align: center);
+            }
+          }
+        }
+      }
+    }
+  }
+}

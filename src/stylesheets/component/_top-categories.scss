@@ -1,83 +1,77 @@
-@use '../abstract/' as *;
+@use "../abstract/" as *;
 
-.top-categories{
-    margin-top: 8rem;
-    h3{
-        @include mobile {
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 36px;
-            letter-spacing: 0em;
-            text-align: center;
+.top-categories {
+  margin-top: 8rem;
+  h3 {
+    @include mobile {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  p {
+    color: $li-hover;
+    font-family: "Popins";
+    text-align: right;
+    @include mobile {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0em;
+    }
+  }
+  .container-card {
+    margin-top: 1rem;
+    .course-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 2rem;
+      overflow-x: scroll;
+      @include mobile {
+        gap: 2px;
+      }
+      .feature-imgitem {
+        figure {
+          height: 100%;
+          @include mobile {
+            border-radius: 5px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            @include tablet {
+            }
+            @include mobile {
+              width: 116px;
+              height: 133px;
+              border-radius: 5px;
+            }
+          }
         }
+      }
+    }
+    .arrow-horizon {
+      @include flex($direction: row, $justify: space-between, $align: center);
+      padding: 0 2rem;
+      transition: 0 -17rem 0;
+      transform: translateY(-23rem);
+      @include mobile {
+        display: none;
+      }
 
+      @include tablet {
+        display: none;
+      }
+      .button-horizon {
+        border-radius: 50%;
+        color: $text-color;
+        padding: 1.4rem 1.6rem;
+        font-size: 40px;
+      }
     }
-    p{
-        color: $li-hover;
-        font-family: 'Popins';
-        text-align: right;
-        @include mobile {
-                margin: 0;             
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 21px;
-                letter-spacing: 0em;
-                
-            }
-    }
-    .container-card{
-        margin-top: 1rem;
-        .course-group{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            gap: 2rem   ;
-            overflow-x: scroll;
-            @include mobile {
-                    gap: 2px;
-                        
-                }
-            .feature-imgitem{
-                figure{
-                    height: 100%;
-                    @include mobile {
-                    border-radius: 5px;
-                    }
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        @include tablet {
-                            
-                        }
-                        @include mobile {
-                                width: 116px;
-                                height: 133px;
-                                border-radius: 5px;                                
-                            }
-                    }
-                }
-            }
-            
-        }
-        .arrow-horizon{
-            @include flex($direction: row, $justify: space-between, $align: center);
-            padding: 0 2rem;
-            transition: 0 -17rem 0;
-            transform: translateY(-23rem);
-            @include mobile {
-                    display: none;
-                }
-            
-                @include tablet {
-                    display: none;
-                }
-            .button-horizon{
-                border-radius: 50%;
-                color: $text-color;
-                padding: 1.4rem 1.6rem;
-                font-size: 40px;
-            }
-        }
-    }
+  }
 }
-
