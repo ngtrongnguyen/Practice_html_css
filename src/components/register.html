@@ -1,0 +1,95 @@
+<h3 style="margin-top: 5rem">Popular examination</h3>
+<section class="register">
+  <div class="container">
+    <div class="register-container">
+      <div class="register-avata">
+        <figure>
+          <img
+            src="../assets/img/Register/regis-avata.png"
+            alt="register avata"
+          />
+          <div class="div-exp">
+            <div class="register-outstand">
+              <figure>
+                <img
+                  src="../assets/img/Register/regis-mini.png"
+                  alt="register avata"
+                />
+              </figure>
+              <div class="outstand-mid">
+                <b>Den</b>
+                <img
+                  src="../assets/img/Experts/outstanding/Vector-outstand.png"
+                  alt="experts avata"
+                />
+                of <br />
+                schorlars
+              </div>
+            </div>
+          </div>
+        </figure>
+      </div>
+      <div class="register-form">
+        <form>
+          <!-- class named "container" is assigned to div -->
+          <div class="form-contain">
+            <span
+              >Registration to get notified about new competition and article we
+              publish.</span
+            >
+            <label for="Fullname"></label>
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="username"
+              id="username"
+              required
+            />
+
+            <label for="email"></label>
+            <input
+              type="text"
+              placeholder=" Email"
+              name="email"
+              id="email"
+              required
+            />
+
+            <label for="phonenumber"></label>
+            <input
+              type="phone"
+              placeholder="Phone Number"
+              name="pwd"
+              id="pwd"
+              required
+            />
+            <dl>
+              <dd>
+                <div class="regis-snowflake">
+                  <include
+                    src="./components/list-img.html"
+                    locals='{
+                                        "list": "[`../assets/img/Register/u_snowflake.png`]"
+                                          }'
+                  >
+                  </include>
+                  List of courses goes here
+                </div>
+              </dd>
+              <include
+                src="./components/list-img.html"
+                locals='{
+                                        "list": "[`../assets/img/Register/Arrow - Down 2.png`]"
+                                          }'
+              >
+              </include>
+            </dl>
+            <div class="register-button">
+              <button type="submit">Register</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
