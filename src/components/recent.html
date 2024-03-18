@@ -1,0 +1,60 @@
+<section class="popular">
+  <div class="container">
+    <h3>Recent Publications</h3>
+    <p>See all</p>
+    <div class="container-popular">
+      <div class="popular-group">
+        <include
+          src="./components/list-img.html"
+          locals='{
+                        "list": "[`../assets/img/popular-exam/natural.png`]"
+                          }'
+        >
+        </include>
+        <include
+          src="./components/list-img.html"
+          locals='{
+                                        "list": "[`../assets/img/popular-exam/22.png`]"
+                                          }'
+        >
+        </include>
+        <include
+          src="./components/list-img.html"
+          locals='{
+                                        "list": "[`../assets/img//popular-exam/data.png`]"
+                                          }'
+        >
+        </include>
+        <include
+          src="./components/list-img.html"
+          locals='{
+                                        "list": "[`../assets/img/popular-exam/Advance.png`]"
+                                          }'
+        >
+        </include>
+      </div>
+      <div class="arrow-horizon arrow-transition">
+        <include
+          src="./components/button.html"
+          locals='{
+                                      "class" : "button-horizon",
+                                      "backgroundColor" : "$borderbtn-color",
+                                      "color" : "$text-color",
+                                      "button" : "<"
+                                      }'
+        >
+        </include>
+        <include
+          src="./components/button.html"
+          locals='{
+                                                    "class" : "button-horizon",
+                                                    "backgroundColor" : "$borderbtn-color",
+                                                    "color" : "$text-color",
+                                                    "button" : ">"
+                                                    }'
+        >
+        </include>
+      </div>
+    </div>
+  </div>
+</section>
