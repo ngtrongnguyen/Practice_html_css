@@ -1,0 +1,22 @@
+@use "../abstract/" as *;
+
+.footerlist-contain {
+  @include flex($direction: column, $justify: flex-start, $align: flex-start);
+  b {
+    font-family: "Popins";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: $text-color;
+  }
+
+  a {
+    //   font-family: "Popins";
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: center;
+    color: $text-color;
+  }
+}

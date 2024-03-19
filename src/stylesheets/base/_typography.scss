@@ -15,7 +15,6 @@
   src: url(/src/assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
 }
 
-footer,
 h1 {
   font-family: "Popins";
   font-style: normal;
@@ -114,5 +113,13 @@ li {
   font-weight: 700;
   font-size: 1rem;
   line-height: 20.11px;
+  color: $text-color;
+}
+footer {
+  font-family: "Popins";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
   color: $text-color;
 }
