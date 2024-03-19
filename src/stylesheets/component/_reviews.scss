@@ -1,0 +1,83 @@
+@use "../abstract/" as *;
+
+.reviews {
+  margin-top: 20rem;
+  @include flex($direction: column, $justify: center, $align: center);
+  .reviews-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5rem 0;
+    grid-gap: 2rem;
+    @include tablet {
+      width: 100%;
+      @include flex($direction: column, $justify: center, $align: center);
+      padding: 0;
+    }
+    .reviews-content {
+      margin-top: 5rem;
+      @include flex($direction: column, $justify: center, $align: flex-start);
+      gap: 3rem;
+
+      @include tablet {
+        width: 100%;
+        @include flex($direction: column, $justify: center, $align: center);
+        padding: 0;
+      }
+      @include mobile {
+        @include flex($direction: row, $justify: center, $align: center);
+      }
+      h4 {
+        display: inline;
+        @include mobile {
+          font-size: 22px;
+        }
+        b {
+          display: inline-grid;
+          @include mobile {
+            font-size: 16px;
+          }
+          .vector-full {
+            @include mobile {
+              display: none;
+            }
+          }
+
+          .vector-mobile {
+            display: none;
+
+            @include mobile {
+              display: block;
+            }
+          }
+        }
+      }
+      .content-arrow {
+        @include flex($direction: row, $justify: space-between, $align: center);
+        gap: 3rem;
+        @include mobile {
+          gap: 1rem;
+        }
+        .button-horizon {
+          border-radius: 50%;
+          color: $reviews-button;
+          background-color: $text-color;
+          padding: 1.4rem 1.6rem;
+          font-size: 40px;
+          border: 1px solid $reviews-button;
+          @include mobile {
+            padding: 0.5rem 1rem;
+            font-size: 10px;
+          }
+        }
+      }
+
+      span {
+        color: $p-color;
+      }
+    }
+    .reviews-containlist {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

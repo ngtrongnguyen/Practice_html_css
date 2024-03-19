@@ -1,116 +1,118 @@
-@use '../abstract/' as * ;
+@use "../abstract/" as *;
 /* Heading 1 */
 @font-face {
-    font-family: Opensans;
-    src: url(../assets/fonts/Open-Sans-37357/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-family: Opensans;
+  src: url(/src/assets/fonts/Open-Sans-37357/Open_Sans/OpenSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: Popins;
-    src: url(/src/assets/fonts/poppins/Poppins-Black.otf);
+  font-family: Popins;
+  src: url(/src/assets/fonts/poppins/Poppins-Black.otf);
 }
 
 @font-face {
-    font-family: SourseSansPro;
-    src: url(/src/assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+  font-family: SourseSansPro;
+  src: url(/src/assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
 }
 
-footer,h1 {
-    font-family: 'Popins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 72px;
-    color: $text-color;
-    text-align: center;
-}
-h3{
-        font-size: 24px;
-        font-weight: 100;
-        line-height: 36px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $p-color ;
+footer,
+h1 {
+  font-family: "Popins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  color: $text-color;
+  text-align: center;
 }
 
-h3{
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 72px;
-    letter-spacing: 0em;
-    text-align: center;
-    @include mobile {
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 36px; 
-        }
-}
-h4{
-    font-family: 'Popins';
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 78px;
-    letter-spacing: 0em;
-    text-align: left;
-    @include mobile {
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 48px;
-            text-align: center;
-        }
-    @include tablet {
-            text-align: center;
-        }
-}
-p{
-    text-align: center;
-    color: $text-color;
-    font-family: 'SourseSanPro';
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 36px;
-        letter-spacing: 0em;
-        text-align: center;
-    @include mobile {
-            margin: 0;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 21px;
-        }        
-         
-}
-span{
+h3 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $p-color;
+  @include mobile {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-    // color: $text-color;
-    @include mobile {           
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            text-align: center;
-        }
+  }
 }
-b{
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 78px;
-    letter-spacing: 0em;
-    color: $li-hover;
-    @include mobile {
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 48px;
-        }
+h4 {
+  font-family: "Popins";
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0em;
+  text-align: left;
+  @include mobile {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+  }
+  @include tablet {
+    text-align: center;
+  }
+}
+h5 {
+  font-family: "Popins";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  @include tablet {
+    display: none;
+  }
+}
+p {
+  text-align: center;
+  color: $text-color;
+  font-family: "SourseSanPro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  @include mobile {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  // color: $text-color;
+  @include mobile {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+b {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0em;
+  color: $li-hover;
+  @include mobile {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+  }
 }
 li {
-    font-family: 'SourseSansPro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 20.11px;
-    color: $text-color;  
+  font-family: "SourseSansPro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20.11px;
+  color: $text-color;
 }
-
