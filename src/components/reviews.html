@@ -9,12 +9,12 @@
             Students
             <img
               src="../assets/img/review/Vector 19.png"
-              alt="publicstions vector"
+              alt="reviews vector"
               class="vector-full"
             />
             <img
-              src="../assets/img/Publiction/Vector 30.png"
-              alt="publicstions vector"
+              src="../assets/img/review/Vector 20.png"
+              alt="reviews vector"
               class="vector-mobile"
             />
           </b>
@@ -43,26 +43,28 @@
           </include>
         </div>
       </div>
-      <include
-        src="./components/reviews-list.html"
-        locals='{
+      <div class="reviews-containlist">
+        <include
+          src="./components/reviews-list.html"
+          locals='{
                                   "img": "../assets/img/review/murkjuma.png",
                                   "name": "Mohh Jumah.",
                                   "role": " Senior developer.",
                                   "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis "                                  
                                   }'
-      >
-      </include>
-      <include
-        src="./components/reviews-list.html"
-        locals='{
+        >
+        </include>
+        <include
+          src="./components/reviews-list.html"
+          locals='{
                                   "img": "../assets/img/review/jojhnmark.png",
                                   "name": "John Mark.",
                                   "role": "Data analyst.",
                                   "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis "                                  
                                   }'
-      >
-      </include>
+        >
+        </include>
+      </div>
     </div>
   </div>
 </section>

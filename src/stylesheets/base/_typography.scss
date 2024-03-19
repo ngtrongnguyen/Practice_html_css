@@ -56,6 +56,16 @@ h4 {
     text-align: center;
   }
 }
+h5 {
+  font-family: "Popins";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  @include tablet {
+    display: none;
+  }
+}
 p {
   text-align: center;
   color: $text-color;

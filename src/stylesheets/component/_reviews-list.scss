@@ -21,6 +21,10 @@
         line-height: 27.24px;
         text-align: center;
         color: black;
+        @include mobile {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
       p {
         font-family: "OpenSans";
@@ -29,6 +33,10 @@
         line-height: 24.51px;
         text-align: center;
         color: orange;
+        @include mobile {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
   }
@@ -41,6 +49,10 @@
       line-height: 30px;
       text-align: left;
       color: black;
+      @include mobile {
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
   }
 }
