@@ -1,0 +1,68 @@
+<section class="reviews">
+  <div class="container">
+    <h5>Reviews</h5>
+    <div class="reviews-container">
+      <div class="reviews-content">
+        <h4>
+          What our
+          <b>
+            Students
+            <img
+              src="../assets/img/review/Vector 19.png"
+              alt="publicstions vector"
+              class="vector-full"
+            />
+            <img
+              src="../assets/img/Publiction/Vector 30.png"
+              alt="publicstions vector"
+              class="vector-mobile"
+            />
+          </b>
+          Say About Us
+        </h4>
+        <div class="content-arrow">
+          <include
+            src="./components/button.html"
+            locals='{
+                                      "class" : "button-horizon",
+                                      "backgroundColor" : "$text-color",
+                                      "color" : "$bgbtn-color",
+                                      "button" : "<"
+                                      }'
+          >
+          </include>
+          <include
+            src="./components/button.html"
+            locals='{
+                                      "class" : "button-horizon",
+                                      "backgroundColor" : "$text-color",
+                                      "color" : "$bgbtn-color",
+                                      "button" : ">"
+                                      }'
+          >
+          </include>
+        </div>
+      </div>
+      <include
+        src="./components/reviews-list.html"
+        locals='{
+                                  "img": "../assets/img/review/murkjuma.png",
+                                  "name": "Mohh Jumah.",
+                                  "role": " Senior developer.",
+                                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis "                                  
+                                  }'
+      >
+      </include>
+      <include
+        src="./components/reviews-list.html"
+        locals='{
+                                  "img": "../assets/img/review/jojhnmark.png",
+                                  "name": "John Mark.",
+                                  "role": "Data analyst.",
+                                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis "                                  
+                                  }'
+      >
+      </include>
+    </div>
+  </div>
+</section>

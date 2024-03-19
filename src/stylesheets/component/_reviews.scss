@@ -1,0 +1,48 @@
+@use "../abstract/" as *;
+
+.reviews {
+  margin-top: 20rem;
+  @include flex($direction: column, $justify: center, $align: center);
+  .reviews-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5rem 0;
+    .reviews-content {
+      margin-top: 5rem;
+      @include flex($direction: column, $justify: center, $align: flex-start);
+      gap: 3rem;
+
+      @include tablet {
+        width: 100%;
+        @include flex($direction: column, $justify: center, $align: center);
+        padding: 0;
+      }
+
+      h4 {
+        display: inline;
+
+        b {
+          display: inline-grid;
+
+          .vector-full {
+            @include mobile {
+              display: none;
+            }
+          }
+
+          .vector-mobile {
+            display: none;
+
+            @include mobile {
+              display: block;
+            }
+          }
+        }
+      }
+
+      span {
+        color: $p-color;
+      }
+    }
+  }
+}
