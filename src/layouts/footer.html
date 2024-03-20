@@ -92,6 +92,32 @@
           </div>
         </div>
       </div>
+      <div class="footer-searchbox">
+        <p>Subscribe to get latest updates</p>
+        <div class="search-total">
+          <input type="text" id="search-box" placeholder="Your Email address" />
+          <include
+            src="./components/button.html"
+            locals='{
+                                        "class" : "buttonD",
+                                        "backgroundColor" : "$borderbtn-color",
+                                        "color" : "$text-color",
+                                        "button" : "Subscribe"
+                                        }'
+          >
+          </include>
+        </div>
+      </div>
+      <div class="footer-bottomlogo">
+        <include
+          src="./components/list-img.html"
+          locals='{
+                                        "list": "[`../assets/img/Footer/logo-footer.png`]"
+                                          }'
+        >
+        </include>
+        <p>Powered By Contentionary</p>
+      </div>
     </div>
   </div>
 </footer>

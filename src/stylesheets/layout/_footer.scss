@@ -5,6 +5,7 @@
   background-color: $arrow-color;
   .footer-container {
     padding: 6rem 0 3rem 0;
+
     .footer-content {
       @include flex(
         $direction: row,
@@ -53,6 +54,31 @@
           }
         }
       }
+    }
+    .footer-searchbox {
+      @include flex($direction: column, $justify: center, $align: center);
+      gap: 1rem;
+      .search-total {
+        @include flex($direction: row, $justify: center, $align: center);
+        ::placeholder {
+          color: $bgbtn-color;
+        }
+        #search-box {
+          color: $li-hover;
+          padding: 1.32rem;
+          font-size: 17px;
+          border: none;
+          width: 30rem;
+        }
+        .buttonD {
+          border-radius: 0;
+        }
+      }
+    }
+    .footer-bottomlogo {
+      margin-top: 3rem;
+      @include flex($direction: row, $justify: flex-start, $align: flex-start);
+      gap: 2rem;
     }
   }
 }
