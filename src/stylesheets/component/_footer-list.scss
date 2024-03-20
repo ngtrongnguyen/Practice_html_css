@@ -9,6 +9,10 @@
     line-height: 24px;
     text-align: center;
     color: $text-color;
+    @include mobile {
+        
+        font-size: 12px;
+      }
   }
 
   a {
@@ -18,5 +22,10 @@
     line-height: 24px;
     text-align: center;
     color: $text-color;
+    @include mobile {
+        text-align: start;
+        font-size: 12px;
+      }
   }
 }
+

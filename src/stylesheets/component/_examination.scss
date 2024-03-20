@@ -1,7 +1,7 @@
 @use '../abstract/' as *;
 
 .exam-contain {
-    margin-top: 20rem;
+    margin-top: 8rem;
     @include bg-img("../assets/img/Experts/background.png");
     padding-bottom: 1rem;
     .exam-container {
@@ -130,4 +130,5 @@
         }
     }
 }
+
 

@@ -1,7 +1,7 @@
 @use "../abstract/" as *;
 
 .reviews {
-  margin-top: 20rem;
+  margin-top: 8rem;
   @include flex($direction: column, $justify: center, $align: center);
   .reviews-container {
     display: grid;
@@ -81,3 +81,4 @@
     }
   }
 }
+

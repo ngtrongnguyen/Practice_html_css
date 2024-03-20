@@ -5,13 +5,49 @@
   background-color: $arrow-color;
   .footer-container {
     padding: 6rem 0 3rem 0;
-
+    .footer-searchbox-mobile{
+      display: none;
+      width: 100%;
+      .search-total {
+          @include flex($direction: row, $justify: center, $align: center);
+          width: 100%;
+          
+          ::placeholder {
+            color: $bgbtn-color;
+          }
+      
+          #search-box {
+            color: $li-hover;
+            padding: 1rem;
+            font-size: 12px;
+            border: none;
+            width: 100%;
+          }
+      
+          .buttonD {
+            border-radius: 0;
+            padding: 0.7rem ;
+            font-size: 12px;
+          }
+        }
+      @include mobile {
+          @include flex($direction: column, $justify: flex-start, $align: flex-start);
+      
+        }
+    }
     .footer-content {
       @include flex(
         $direction: row,
         $justify: space-between,
         $align: flex-start
       );
+      @include mobile {
+          @include flex($direction: column-reverse,
+              $justify: space-between,
+              $align: flex-start);
+              gap: 1rem;
+              margin-top: 2rem;
+        }
       .footer-logo {
         @include flex($direction: column, $justify: center, $align: flex-start);
         gap: 1rem;
@@ -22,6 +58,9 @@
           line-height: 24px;
           letter-spacing: 1px;
           text-align: left;
+          @include mobile {
+              display: none;
+            }
         }
         .footer-icon {
           @include flex(
@@ -35,6 +74,9 @@
       .footer-group {
         @include flex($direction: row, $justify: center, $align: flex-start);
         gap: 10rem;
+        @include tablet {
+            gap: 1rem;
+          }
         .footer-info {
           @include flex(
             $direction: column,
@@ -74,11 +116,20 @@
           border-radius: 0;
         }
       }
+      @include mobile {
+        display: none;
+      
+      }
     }
     .footer-bottomlogo {
       margin-top: 3rem;
       @include flex($direction: row, $justify: flex-start, $align: flex-start);
       gap: 2rem;
+      @include mobile {
+          @include flex($direction: column, $justify: flex-start, $align: flex-start);
+          
+        }
     }
   }
 }
+
