@@ -12,10 +12,12 @@
       text-align: center;
     }
   }
+
   p {
     font-family: "Popins";
     text-align: right;
     color: $li-hover;
+
     @include mobile {
       margin: 0;
       font-size: 14px;
@@ -27,6 +29,7 @@
 
   .container-compet {
     margin-top: 1rem;
+
     .compet-group {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -50,8 +53,7 @@
             width: 100%;
             height: 100%;
 
-            @include tablet {
-            }
+            @include tablet {}
 
             @include mobile {
               width: 116px;
@@ -67,6 +69,7 @@
       @include flex($direction: row, $justify: space-between, $align: center);
       padding: 0 2rem;
       transform: translateY(-18rem);
+
       @include mobile {
         display: none;
       }
@@ -84,3 +87,4 @@
     }
   }
 }
+
