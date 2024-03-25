@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: Popins;
-  src: url(/src/assets/fonts/poppins/Poppins-Black.otf);
+  src: url(/src/assets/fonts/poppins/Poppins-Medium.otf);
 }
 
 @font-face {
@@ -26,6 +26,7 @@ h1 {
 }
 
 h3 {
+  font-family: "Popins";
   font-size: 48px;
   font-weight: 600;
   line-height: 72px;

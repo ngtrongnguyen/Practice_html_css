@@ -1,76 +1,76 @@
-@use '../abstract/' as * ;
+@use "../abstract/" as *;
 
 .header-navbar {
-    @include mobile {
-            background-color: aliceblue;
-            
-        }
+  @include mobile {
+    background-color: $navbar-color;
+  }
+  width: 100%;
+  @include flex($direction: row, $justify: space-between, $align: center);
+  .nav-left {
     width: 100%;
-    @include flex($direction: row, $justify: space-between, $align: center);
-    .nav-left {
-        width: 100%;
-        margin: 1rem;
-        .nav-left-logocontain{
-            @include  flex($direction: row, $justify: center, $align: center);
-            gap: 1rem;
-            span{
-                color: $arrow-color;
-            }
-            .nav-left-mobile {
-                display: none;
-                @include mobile {
-                display: block;
-                text-align: center;
-                font-size: 2rem;
-                }
-            }
-        }
-    }
-    .nav-middle{
-        width: 100%;
-        .nav-item{
-            @include flex($direction: row, $justify: space-between, $align: center);
-        }
-        .nav-link{
-            color: $text-color;
-        }
+    margin: 1rem;
+    .nav-left-logocontain {
+      @include flex($direction: row, $justify: center, $align: center);
+      gap: 1rem;
+      span {
+        color: $arrow-color;
+      }
+      .nav-left-mobile {
+        display: none;
         @include mobile {
-            display: none;
+          display: block;
+          text-align: center;
+          font-size: 2rem;
         }
-        @include tablet {
-            display: none;
-        }
+      }
     }
-    .nav-right{
-        width: 100%;
-        .nav-regis{
-            @include flex($direction: row, $justify: center, $align: center);
-            @include mobile {
-                    display: none;
-                }
-            .nav-link {
-                color: $text-color;
-                }
-        }
-        .nav-regis-search{
-            padding: 0.5rem 1rem;
-            border-radius: 5%;
-        }
-        .nav-regis-hover{
-            padding: 0.5rem 1rem;
-            border-radius: 5%;
-        }
-        .nav-regis-hover:hover{
-            background-color: $text-color;
-            color: $li-hover;
-        }
-        .nav-right-mobible{
-            display: none;
-            @include mobile {
-                    display: block;
-                    text-align: center;
-                }
-        }
+  }
+  .nav-middle {
+    width: 100%;
+    .nav-item {
+      @include flex($direction: row, $justify: space-between, $align: center);
     }
+    .nav-link {
+      color: $text-color;
+    }
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  .nav-right {
+    width: 100%;
+    .nav-regis {
+      @include flex($direction: row, $justify: center, $align: center);
+      @include mobile {
+        display: none;
+      }
+      .nav-link {
+        color: $text-color;
+      }
+    }
+    .nav-regis-search {
+      padding: 0.5rem 1rem;
+      border-radius: 5%;
+    }
+    .nav-regis-hover {
+      padding: 0.5rem 1rem;
+      border-radius: 5%;
+    }
+    .nav-regis-hover:hover {
+      background-color: $text-color;
+      a {
+        color: $li-hover;
+      }
+    }
+    .nav-right-mobible {
+      display: none;
+      @include mobile {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
 }
-
