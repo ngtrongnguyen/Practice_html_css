@@ -64,10 +64,6 @@
         line-height: 2rem;
         padding: 1rem;
       }
-
-      //   @include mobile {
-      //     transform: translate(-85%, 165%);
-      //   }
     }
     @include tablet {
       display: block;
@@ -91,7 +87,7 @@
           font-weight: 500;
           line-height: 24px;
           text-align: left;
-          color: black;
+          color: $blockquote-color;
           margin-bottom: 3rem;
           @include mobile {
             display: none;
@@ -145,7 +141,7 @@
           border: none;
           background-color: $background-regis;
           border-radius: 0.25em;
-          color: black;
+          color: $blockquote-color;
           display: none;
           @include mobile {
             display: block;
@@ -161,7 +157,7 @@
           outline-color: $outline;
           background-color: $background-regis;
           border-radius: 0.25em;
-          color: black;
+          color: $blockquote-color;
           @include mobile {
             display: none;
           }
