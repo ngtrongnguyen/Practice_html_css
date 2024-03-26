@@ -1,75 +1,126 @@
-@use '../abstract/' as * ;
+@use "../abstract/" as *;
 /* Heading 1 */
-footer,h1 {
-
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 72px;
-    color: $text-color;
+@font-face {
+  font-family: Opensans;
+  src: url(/src/assets/fonts/Open-Sans-37357/Open_Sans/OpenSans-Regular.ttf);
 }
+
+@font-face {
+  font-family: Popins;
+  src: url(/src/assets/fonts/poppins/Poppins-Medium.otf);
+}
+
+@font-face {
+  font-family: SourseSansPro;
+  src: url(/src/assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+}
+
+h1 {
+  font-family: "Popins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  color: $text-color;
+  text-align: center;
+}
+
 h3 {
-    
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 550;
-    font-size: 32px;
+  font-family: "Popins";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $p-color;
+  @include mobile {
+    font-size: 24px;
+    font-weight: 600;
     line-height: 36px;
-    color: #120A00;
-    margin: 20px 0;
-
+  }
 }
-
-span{
-   
-/* Regular/Normal text */
-    font-family: 'Quicksand';
-    font-style: normal;
+h4 {
+  font-family: "Popins";
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0em;
+  text-align: left;
+  @include mobile {
+    font-size: 32px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 12px;
-/* identical to box height, or 150% */
-/* Brand color/Secondary */
-
-    color: $span-color;
+    line-height: 48px;
+    text-align: center;
+  }
+  @include tablet {
+    text-align: center;
+  }
+}
+h5 {
+  font-family: "Popins";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  @include tablet {
+    display: none;
+  }
 }
 p {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    color: $p-color;
-    margin: 0 10px;
+  text-align: center;
+  color: $text-color;
+  font-family: "SourseSanPro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  @include mobile {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  // color: $text-color;
+  @include mobile {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 b {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    color: $b-color;
-    margin-left: 10px;
-}
-q {
-    font-family: 'Quicksand';
-    font-style: normal;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0em;
+  color: $li-hover;
+  @include mobile {
+    font-size: 32px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: $q-color;
-    
+    line-height: 48px;
+  }
 }
-
-blockquote {
-    //styleName: Regular/Normal text;
-    font-family: Quicksand;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    // text-align: left;
-    color: $blockquote-color;
-
+li {
+  font-family: "SourseSansPro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20.11px;
+  color: $text-color;
+}
+footer {
+  font-family: "Popins";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: $text-color;
 }

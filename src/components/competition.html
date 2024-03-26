@@ -1,0 +1,60 @@
+<section class="compet">
+  <div class="container">
+    <h3>Featured Competition</h3>
+    <p>See all</p>
+    <div class="container-compet">
+      <div class="compet-group">
+        <include
+          src="./components/list-img.html"
+          locals='{
+                        "list": "[`../assets/img/feature-comp/marketing-comp.png`]"
+                          }'
+        >
+        </include>
+        <include
+          src="./components/list-img.html"
+          locals='{
+                                        "list": "[`../assets/img/feature-comp/ux-Design.png`]"
+                                          }'
+        >
+        </include>
+        <include
+          src="./components/list-img.html"
+          locals='{
+                                        "list": "[`../assets/img/feature-comp/proraming-com[.png`]"
+                                          }'
+        >
+        </include>
+        <include
+          src="./components/list-img.html"
+          locals='{
+                                        "list": "[`../assets/img/feature-comp/photo-comp.png`]"
+                                          }'
+        >
+        </include>
+      </div>
+      <div class="arrow-horizon arrow-transition">
+        <include
+          src="./components/button.html"
+          locals='{
+                                      "class" : "button-horizon",
+                                      "backgroundColor" : "$borderbtn-color",
+                                      "color" : "$text-color",
+                                      "button" : "<"
+                                      }'
+        >
+        </include>
+        <include
+          src="./components/button.html"
+          locals='{
+                                                    "class" : "button-horizon",
+                                                    "backgroundColor" : "$borderbtn-color",
+                                                    "color" : "$text-color",
+                                                    "button" : ">"
+                                                    }'
+        >
+        </include>
+      </div>
+    </div>
+  </div>
+</section>

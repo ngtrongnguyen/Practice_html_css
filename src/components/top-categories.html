@@ -1,0 +1,42 @@
+<section class="top-categories">
+  <div class="container">
+    <h3>Top cartegories</h3>
+    <p>see all</p>
+    <div class="container-card">
+      <div class="course-group">
+        <include src="./components/list-img.html" locals='{
+                        "list": "[`../assets/img/Top cartegories/marketing.png`]"
+                          }'>
+        </include>
+        <include src="./components/list-img.html" locals='{
+                                        "list": "[`../assets/img/Top cartegories/Design.png`]"
+                                          }'>
+        </include>
+        <include src="./components/list-img.html" locals='{
+                                        "list": "[`../assets/img/Top cartegories/Program.png`]"
+                                          }'>
+        </include>
+        <include src="./components/list-img.html" locals='{
+                                        "list": "[`../assets/img/Top cartegories/Techno.png`]"
+                                          }'>
+        </include>
+      </div>
+      <div class="arrow-horizon arrow-transition">
+        <include src="./components/button.html" locals='{
+                                      "class" : "button-horizon",
+                                      "backgroundColor" : "$borderbtn-color",
+                                      "color" : "$text-color",
+                                      "button" : "<"
+                                      }'>
+        </include>
+        <include src="./components/button.html" locals='{
+                                                    "class" : "button-horizon",
+                                                    "backgroundColor" : "$borderbtn-color",
+                                                    "color" : "$text-color",
+                                                    "button" : ">"
+                                                    }'>
+        </include>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,7 +1,36 @@
 <header class="header">
     <include src="./components/nav.html"></include>
-
     <div class="main-header">
-       
+       <h1>A Classical Education for the Future</h1>
+       <p>We prepare you to engage in the world that is and to help bring about a world that ought to be</p>
+        <include src="./components/button.html" locals='{
+                        "class" : "buttonD",
+                        "backgroundColor" : "$borderbtn-color",
+                        "color" : "$text-color",
+                        "button" : "Get started"
+                        }'></include>
+    </div>
+    <div class="header-bottom">
+        <div class="bottom-funtion">
+            <include src="./components/header-list.html" locals='{
+                        "list": "[`../assets/img/header/Live.png`]",
+                        "content": "Live chat" 
+                          }'>
+            </include>
+            <include src="./components/header-list.html" locals='{
+                                    "list": "[`../assets/img/header/Exam.png`]",
+                                    "content": "Examination" 
+                                      }'>
+            </include>
+            <include src="./components/header-list.html" locals='{
+                                    "list": "[`../assets/img/header/Compet.png`]",
+                                    "content": "Competition" 
+                                      }'>
+            </include>
+        </div>
+        <figure class="bottom-arrow">
+            <img src="../assets/img/header/arrowup.png" alt="logo-mini">
+        </figure>
     </div>
 </header>
+

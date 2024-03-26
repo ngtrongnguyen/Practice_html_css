@@ -1,8 +1,18 @@
+@use "./abstract/mixin" as *;
 @use "layout";
 @use "base";
 // @use "pages";
 @use "component";
 
+.box {
+  text-align: center;
+}
 .container {
-  margin: 0 auto;
+  margin: 0 12rem;
+  @include tablet {
+    margin: 5rem;
+  }
+  @include mobile {
+    margin: 2rem;
+  }
 }

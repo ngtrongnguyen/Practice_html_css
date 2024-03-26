@@ -1,3 +1,136 @@
 <footer class="footer">
-  
+  <div class="container">
+    <div class="footer-container">
+      <div class="footer-searchbox-mobile">
+        <p>Subscribe to get latest updates</p>
+        <div class="search-total">
+          <input type="text" id="search-box" placeholder="Your Email address" />
+          <include src="./components/button.html" locals='{
+                                              "class" : "buttonD",
+                                              "backgroundColor" : "$borderbtn-color",
+                                              "color" : "$text-color",
+                                              "button" : "Subscribe"
+                                              }'>
+          </include>
+        </div>
+      </div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <include
+            src="./components/list-img.html"
+            locals='{
+                        "list": "[`../assets/img/Footer/Group 200.png`]"
+                          }'
+          >
+          </include>
+          <span>
+            We are not here to sell you products, we sell value through our
+            expertise.
+          </span>
+          <div class="footer-icon">
+            <include
+              src="./components/list-img.html"
+              locals='{
+                        "list": "[`../assets/img/Footer/facebook.png`]"
+                          }'
+            >
+            </include>
+            <include
+              src="./components/list-img.html"
+              locals='{
+                        "list": "[`../assets/img/Footer/bird.png`]"
+                          }'
+            >
+            </include>
+            <include
+              src="./components/list-img.html"
+              locals='{
+                        "list": "[`../assets/img/Footer/instar.png`]"
+                          }'
+            >
+            </include>
+            <include
+              src="./components/list-img.html"
+              locals='{
+                        "list": "[`../assets/img/Footer/in.png`]"
+                          }'
+            >
+            </include>
+          </div>
+        </div>
+        <div class="footer-group">
+          <div class="footer-info">
+            <include
+              src="./components/footer-list.html"
+              locals='{
+                "value" : "Address:",
+                "list": "[`38 opebi Road, Ikeja, Lagos State, Nigeia.`]"
+              }'
+            >
+            </include>
+            <include
+              src="./components/footer-list.html"
+              locals='{
+                "value" : "Phone:",
+                "list": "[`037772233.`]"
+              }'
+            >
+            </include>
+            <include
+              src="./components/footer-list.html"
+              locals='{
+                "value" : "Email :",
+                "list": "[`contact@contentionary.com.`]"
+              }'
+            >
+            </include>
+          </div>
+          <div class="footer-company">
+            <include
+              src="./components/footer-list.html"
+              locals='{
+                "value" : "Company",
+                "list": "[``]"
+              }'
+            >
+            </include>
+            <include
+              src="./components/footer-list.html"
+              locals='{
+                "value" : "",
+                "list": "[`About us`,`Features`,`Pricing`]"
+              }'
+            >
+            </include>
+          </div>
+        </div>
+      </div>
+      <div class="footer-searchbox">
+        <p>Subscribe to get latest updates</p>
+        <div class="search-total">
+          <input type="text" id="search-box" placeholder="Your Email address" />
+          <include
+            src="./components/button.html"
+            locals='{
+                                        "class" : "buttonD",
+                                        "backgroundColor" : "$borderbtn-color",
+                                        "color" : "$text-color",
+                                        "button" : "Subscribe"
+                                        }'
+          >
+          </include>
+        </div>
+      </div>
+      <div class="footer-bottomlogo">
+        <include
+          src="./components/list-img.html"
+          locals='{
+                                        "list": "[`../assets/img/Footer/logo-footer.png`]"
+                                          }'
+        >
+        </include>
+        <p>Powered By Contentionary</p>
+      </div>
+    </div>
+  </div>
 </footer>
